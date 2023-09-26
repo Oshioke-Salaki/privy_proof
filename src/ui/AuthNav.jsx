@@ -6,7 +6,7 @@ import placeholder from "../assets/placeholder.png";
 function AuthNav() {
   return (
     <nav
-      className="shadow-secondaryShadow col-span-full flex items-center justify-between bg-white py-7 pl-[34px] pr-[27px]"
+      className="col-span-full flex w-full items-center justify-between bg-white py-7 pl-[34px] pr-[27px] shadow-secondaryShadow"
       // style={layout ? layout : {}}
     >
       <Logo />
