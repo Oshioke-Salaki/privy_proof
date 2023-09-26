@@ -6,6 +6,8 @@ import LandingPage from "./pages/LandingPage";
 import DashboardPage from "./pages/DashboardPage";
 import WhatToDo from "./pages/WhatToDo";
 import CreateContract from "./pages/CreateContract";
+import ContractDraft from "./pages/ContractDraft";
+import ContractPreview from "./pages/ContractPreview";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/app" element={<AppLayout />}>
           <Route index element={<Navigate replace to="dashboard" />} />
           <Route path="dashboard" element={<DashboardPage />} />
+          <Route path="contract-draft" element={<ContractDraft />} />
+          <Route path="contract-preview" element={<ContractPreview />} />
           <Route path="create-contract" element={<CreateContract />} />
         </Route>
       </Routes>

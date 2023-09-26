@@ -12,7 +12,7 @@ const StyledNavLink = styled(NavLink)`
     font-size: 1rem;
     font-weight: 400;
     transition: all 0.3s;
-    background-color: white;
+    background-color: inherit;
     padding: 1rem 2.4rem;
   }
 
