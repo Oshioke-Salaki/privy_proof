@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
+
 function CreateIdentityForm() {
   return (
     <form
@@ -38,12 +39,12 @@ function CreateIdentityForm() {
           />
         </div>
       </div>
-      <NavLink
-        to="/app"
+      <Link
+        href="/app"
         className="bg-primaryColor leading-default flex items-center justify-center self-center rounded-full px-[61px] py-[11.5px] text-center text-base font-semibold"
       >
         Create
-      </NavLink>
+      </Link>
     </form>
   );
 }
