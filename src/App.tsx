@@ -29,16 +29,17 @@
 // }
 
 // export default App;
-import CreateIdentityPage from "./pages/CreateIdentityPage";
+import CreateIdentityPage from './pages/CreateIdentityPage';
 
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import AppLayout from "./pages/AppLayout";
-import LandingPage from "./pages/LandingPage";
-import DashboardPage from "./pages/DashboardPage";
-import WhatToDo from "./pages/WhatToDo";
-import CreateContract from "./pages/CreateContract";
-import ContractDraft from "./pages/ContractDraft";
-import ContractPreview from "./pages/ContractPreview";
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import AppLayout from './pages/AppLayout';
+import LandingPage from './pages/LandingPage';
+import DashboardPage from './pages/DashboardPage';
+import WhatToDo from './pages/WhatToDo';
+import CreateContract from './pages/CreateContract';
+import ContractDraft from './pages/ContractDraft';
+import ContractPreview from './pages/ContractPreview';
+import ContractId from './pages/ContractId';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="contract-draft" element={<ContractDraft />} />
           <Route path="contract-preview" element={<ContractPreview />} />
+          <Route path="contract-id" element={<ContractId />} />
           <Route path="create-contract" element={<CreateContract />} />
         </Route>
       </Routes>
