@@ -1,18 +1,19 @@
 import { useEffect, useState } from "react";
 import { Button } from "@chakra-ui/react";
 import { magic } from "../libs/magic";
+import { useUser } from "../context/UserContext";
 
 const ShowUIButton = () => {
   // Initialize state variable to decide whether to show button or not
   const [showButton, setShowButton] = useState(false);
-
+  const user = useUser();
   // Define a function to check the type of the wallet
   const checkWalletType = async () => {
     try {
       // Fetch the wallet's information using Magic's user.getInfo method
       const walletInfo = await magic.user.getInfo();
       console.log(walletInfo);
-
+      console.log(user);
       ///@ts-ignore
       // Determine if the wallet type is "magic"
       const isMagicWallet = walletInfo.walletType === "magic";
