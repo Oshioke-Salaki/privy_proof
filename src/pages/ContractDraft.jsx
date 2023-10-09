@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router';
+
 function ContractDraft() {
+  const navigate = useNavigate();
   return (
     <div>
       <h1 className="mb-[17px] text-lg font-semibold leading-default text-black">
@@ -98,7 +101,10 @@ function ContractDraft() {
                 />
               </div>
             </div>
-            <button className="mt-9 w-[483px] self-center rounded-full bg-primaryColor py-3 text-center text-base font-semibold leading-default text-black">
+            <button
+              className="mt-9 w-[483px] self-center rounded-full bg-primaryColor py-3 text-center text-base font-semibold leading-default text-black"
+              onClick={() => navigate('contract-preview')}
+            >
               Preview
             </button>
           </div>
